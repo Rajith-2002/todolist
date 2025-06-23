@@ -6,3 +6,5 @@ class Todo(models.Model):
     details = models.TextField()
     date = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.title
